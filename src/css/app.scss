@@ -1,0 +1,9 @@
+@import './utils/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './components/btn';
+
+.btn-list {
+  display: flex;
+  gap: 0.5rem;
+  padding: 2rem;
+}

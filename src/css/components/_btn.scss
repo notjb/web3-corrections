@@ -1,0 +1,90 @@
+@use 'sass:color';
+
+$primary: #077aff;
+$secondary: #6d757d;
+$success: #28a845;
+$danger: #dd3545;
+$warning: #ffc107;
+$info: #14a2b8;
+$light: #f8f9fa;
+$dark: #343a40;
+$link: #087efe;
+
+.btn {
+  display: inline-block;
+  margin: 0.25rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #077aff;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  transition: background-color 300ms ease-in;
+
+  &:hover {
+    background-color: color.adjust($primary, $lightness: -10%);
+  }
+
+  &--secondary {
+    background-color: #6d757d;
+  }
+
+  &--success {
+    background-color: #28a845;
+  }
+
+  &--danger {
+    background-color: #dd3545;
+  }
+
+  &--warning {
+    background-color: #ffc107;
+    color: #343a40;
+  }
+
+  &--info {
+    background-color: #14a2b8;
+  }
+
+  &--light {
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+
+  &--dark {
+    background-color: #343a40;
+  }
+
+  &--link {
+    background-color: transparent;
+    color: #087efe;
+  }
+
+  &--secondary:hover {
+    background-color: color.adjust($secondary, $lightness: -10%);
+  }
+
+  &--success:hover {
+    background-color: color.adjust($success, $lightness: -10%);
+  }
+
+  &--danger:hover {
+    background-color: color.adjust($danger, $lightness: -10%);
+  }
+
+  &--warning:hover {
+    background-color: color.adjust($warning, $lightness: -10%);
+  }
+
+  &--info:hover {
+    background-color: color.adjust($info, $lightness: -10%);
+  }
+
+  &--light:hover {
+    background-color: color.adjust($light, $lightness: -10%);
+  }
+
+  &--dark:hover {
+    background-color: color.adjust($dark, $lightness: -10%);
+  }
+}
