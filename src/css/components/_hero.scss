@@ -1,0 +1,27 @@
+/*
+  Hero
+*/
+
+.hero {
+  max-width: 60%;
+  padding-top: 2rem;
+
+  &__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__title {
+    padding: 2rem 0;
+    color: $primary;
+    font-weight: 600;
+    font-size: 2.5rem; // 40px
+  }
+
+  &__paragraph {
+    color: $secondary;
+    font-size: 1rem;
+    line-height: 2;
+  }
+}

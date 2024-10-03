@@ -1,4 +1,8 @@
-# MMI2 Starter
+# Séance 1 - Correction / Portfolio
+
+![image](preview.png)
+
+## Installation
 
 > Une base de travail pour lancer son prochain projet front.
 > Réalisé pour les cours de WEB3.

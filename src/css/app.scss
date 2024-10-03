@@ -1,9 +1,26 @@
+/*
+  Utilitaires
+*/
 @import './utils/reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import './components/btn';
 
-.btn-list {
-  display: flex;
-  gap: 0.5rem;
-  padding: 2rem;
-}
+/*
+  Variables
+*/
+
+$primary: #27272a;
+$secondary: #65656c;
+
+/*
+  Base
+*/
+
+@import './base/fonts';
+@import './base/container';
+
+/*
+  Composants
+*/
+
+@import './components/hero';
+@import './components/social-listing';
+@import './components/cards-list';
