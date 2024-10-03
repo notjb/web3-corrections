@@ -15,7 +15,7 @@ $link: #087efe;
   margin: 0.25rem 0;
   padding: 0.75rem 1rem;
   border-radius: 0.25rem;
-  background-color: #077aff;
+  background-color: $primary;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
@@ -26,43 +26,45 @@ $link: #087efe;
   }
 
   &--secondary {
-    background-color: #6d757d;
+    background-color: $secondary;
+
+    &:hover {
+      background-color: color.adjust($secondary, $lightness: -10%);
+    }
   }
 
   &--success {
-    background-color: #28a845;
+    background-color: $success;
   }
 
   &--danger {
-    background-color: #dd3545;
+    background-color: $danger;
   }
 
   &--warning {
-    background-color: #ffc107;
+    background-color: $warning;
     color: #343a40;
   }
 
   &--info {
-    background-color: #14a2b8;
+    background-color: $info;
   }
 
   &--light {
-    background-color: #f8f9fa;
+    background-color: $light;
     color: #343a40;
   }
 
   &--dark {
-    background-color: #343a40;
+    background-color: $dark;
   }
 
   &--link {
     background-color: transparent;
-    color: #087efe;
+    color: $link;
   }
 
-  &--secondary:hover {
-    background-color: color.adjust($secondary, $lightness: -10%);
-  }
+  // &--secondary
 
   &--success:hover {
     background-color: color.adjust($success, $lightness: -10%);
