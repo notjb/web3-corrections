@@ -1,0 +1,85 @@
+/*
+Card
+*/
+
+.card {
+  position: relative;
+  padding-top: 3rem;
+  border-radius: 12px;
+  color: #fff;
+
+  &--work {
+    background: $lighterRed;
+  }
+
+  &--play {
+    background: $softBlue;
+  }
+
+  &--study {
+    background: $lightRed;
+  }
+
+  &--exercise {
+    background: $limeGreen;
+  }
+
+  &--social {
+    background: $violet;
+  }
+
+  &--selfcare {
+    background: $softOrange;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background: $darkBlue;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+  }
+
+  &__infos {
+    color: $paleBlue;
+  }
+
+  &__menu {
+    @include resetBtns();
+
+    color: #fff;
+    font-size: 1.125rem;
+  }
+
+  &__count {
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+
+  &__stats {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    z-index: 0;
+  }
+}

@@ -1,0 +1,60 @@
+/*
+  Sidebar
+*/
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background: $darkBlue;
+
+  &__profile {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 12px;
+    background: $blue;
+
+    @media screen and (min-width: 768px) {
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1rem 2rem 4rem;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 64px;
+    height: 64px;
+    border: 2px solid $paleBlue;
+    border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+
+    @media screen and (min-width: 768px) {
+      line-height: 2rem;
+    }
+  }
+
+  &__subheading {
+    display: block;
+    color: $paleBlue;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}

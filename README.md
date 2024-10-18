@@ -1,4 +1,4 @@
-# Séance 1 - Correction / Portfolio
+# Séance 2 - Correction / Dashboard
 
 ![image](preview.png)
 
